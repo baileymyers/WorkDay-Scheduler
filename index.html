@@ -164,29 +164,50 @@
         console.log(now);
 
         for (hour = 9; hour <= 17; hour++) {
-            if (now >= hour && now < hour++) {
-                $(".form-control").addClass("present");
-            } else if (now < hour) {
-                $(".form-control").addClass("past");
-            } else if (now > hour) {
-                $(".form-control").addClass("future");
-                console.log()
+            for (i = 1; i <=9; i++) {
+                var inputForm = $(".todo" + i.toString());
+                console.log(inputForm);
+                    if (now >= hour && now < hour++) {
+                    inputForm.removeClass("past", "future");
+                    inputForm.addClass("present");
+                } else if (now < hour) {
+                    inputForm.removeClass("present", "future");
+                    inputForm.addClass("past");
+                } else if (now > hour) {
+                    inputForm.removeClass("past", "present");
+                    inputForm.addClass("future");
+                }
+            };
+            // if (now >= hour && now < hour++) {
+            //     inputForm.removeClass("past", "future");
+            //     inputForm.addClass("present");
+            // } else if (now < hour) {
+            //     inputForm.removeClass("present", "future");
+            //     inputForm.addClass("past");
+            // } else if (now > hour) {
+            //     inputForm.removeClass("past", "present");
+            //     inputForm.addClass("future");
+            // }
             }
-        }
 
-        for (hour = 0; hour <= 8; hour++) {
-            if (now >= 0 && now <= 8) {
-                $(".form-control").removeClass("past", "present");
-                $(".form-control").addClass("future");
-            }
-        }
+        // for (hour = 0; hour <= 8; hour++) {
+        //     if (now >= 0 && now <= 8) {
+        //         $(".form-control").removeClass("past", "present");
+        //         $(".form-control").addClass("future");
+        //     }
+        // }
 
-        for (hour = 18; hour <= 23; hour++) {
-            if (now >= 18 && now <= 23) {
-                $(".form-control").removeClass("future", "present");
-                $(".form-control").addClass("past");
-            }
-        }
+        // for (hour = 18; hour <= 23; hour++) {
+        //     if (now >= 18 && now <= 23) {
+        //         $(".form-control").removeClass("future", "present");
+        //         $(".form-control").addClass("past");
+        //     }
+        // }
+
+        // if (now >= 9 && now <10) {
+        //     $(".todo1").removeClass("future", "past");
+        //     $(".todo1").addClass("present");
+        // }
 
         $(".savebtn1").on("click", function () {
             let toDo1 = $(".todo1").val().trim();
@@ -194,6 +215,7 @@
         })
 
         $(document).ready(function () {
+            $(".form-control").removeClass("future", "past", "present");
             let toDo1 = $(".todo1");
             if (localStorage.getItem("to-do1")) {
                 toDo1.val(localStorage.getItem("to-do1"));
