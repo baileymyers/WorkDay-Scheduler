@@ -184,11 +184,14 @@
         //         };
         //     };
 
+        // $(".form-control").addClass("future");
+
         for (i = 0; i <= inputArr.length; i++) {
                     let now = new Date().getHours();
                     let inputForm = inputArr[i];
                     var hour = i+9
-                    console.log(hour, now);
+
+                    // console.log(hour, now);
                         if (hour === now) {
                             console.log("present:", now, hour);
                             $(inputForm).removeClass("past", "future");
@@ -197,12 +200,15 @@
                             console.log("past:", now, hour);
                             $(inputForm).removeClass("present", "future");
                             $(inputForm).addClass("past");
+                            console.log(inputForm)
                         } else {
                             console.log("future:", now, hour);
                             $(inputForm).removeClass("past", "present");
                             $(inputForm).addClass("future");
+                            console.log(inputForm)
                     }
             };
+
 
             // if (now >= hour && now < hour++) {
             //     inputForm.removeClass("past", "future");
@@ -240,7 +246,7 @@
         })
 
         $(document).ready(function () {
-            $(".form-control").removeClass("future", "past", "present");
+            // $(".form-control").removeClass("past", "present");
             let toDo1 = $(".todo1");
             if (localStorage.getItem("to-do1")) {
                 toDo1.val(localStorage.getItem("to-do1"));
