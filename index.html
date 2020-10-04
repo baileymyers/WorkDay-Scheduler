@@ -165,23 +165,45 @@
         var inputArr = [$(".todo1"), $(".todo2"), $(".todo3"), $(".todo4"), $(".todo5"), $(".todo6"), $(".todo7"), $(".todo8"), $(".todo9")];
 
         
+        // for (i = 0; i <= inputArr.length; i++) {
+        //     for (hour = 9; hour <= 17; hour++) {
+        //             let now = new Date().getHours();
+        //             // console.log(now);
+        //             let inputForm = inputArr[i];
+        //             console.log(hour, now)
+        //                 if (now >= hour && now < hour++) {
+        //                 $(inputForm).removeClass("past", "future");
+        //                 $(inputForm).addClass("present");
+        //             } else if (now < hour) {
+        //                 $(inputForm).removeClass("present", "future");
+        //                 $(inputForm).addClass("past");
+        //             } else if (now > hour) {
+        //                 $(inputForm).removeClass("past", "present");
+        //                 $(inputForm).addClass("future");
+        //             }
+        //         };
+        //     };
+
         for (i = 0; i <= inputArr.length; i++) {
-            for (hour = 9; hour <= 17; hour++) {
                     let now = new Date().getHours();
-                    console.log(now);
                     let inputForm = inputArr[i];
-                        if (now >= hour && now < hour++) {
-                        $(inputForm).removeClass("past", "future");
-                        $(inputForm).addClass("present");
-                    } else if (now < hour) {
-                        $(inputForm).removeClass("present", "future");
-                        $(inputForm).addClass("past");
-                    } else if (now > hour) {
-                        $(inputForm).removeClass("past", "present");
-                        $(inputForm).addClass("future");
+                    var hour = i+9
+                    console.log(hour, now);
+                        if (hour === now) {
+                            console.log("present:", now, hour);
+                            $(inputForm).removeClass("past", "future");
+                            $(inputForm).addClass("present");
+                        } else if (hour < now) {
+                            console.log("past:", now, hour);
+                            $(inputForm).removeClass("present", "future");
+                            $(inputForm).addClass("past");
+                        } else if (hour > now) {
+                            console.log("future:", now, hour);
+                            $(inputForm).removeClass("past", "present");
+                            $(inputForm).addClass("future");
                     }
-                };
             };
+
             // if (now >= hour && now < hour++) {
             //     inputForm.removeClass("past", "future");
             //     inputForm.addClass("present");
