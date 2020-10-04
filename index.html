@@ -160,23 +160,27 @@
 
         let m = moment();
 
-        let now = new Date().getHours();
-        console.log(now);
+        
 
-        for (hour = 9; hour <= 17; hour++) {
-            for (i = 1; i <=9; i++) {
-                var inputForm = $(".todo" + i.toString());
-                console.log(inputForm);
-                    if (now >= hour && now < hour++) {
-                    inputForm.removeClass("past", "future");
-                    inputForm.addClass("present");
-                } else if (now < hour) {
-                    inputForm.removeClass("present", "future");
-                    inputForm.addClass("past");
-                } else if (now > hour) {
-                    inputForm.removeClass("past", "present");
-                    inputForm.addClass("future");
-                }
+        var inputArr = [$(".todo1"), $(".todo2"), $(".todo3"), $(".todo4"), $(".todo5"), $(".todo6"), $(".todo7"), $(".todo8"), $(".todo9")];
+
+        
+        for (i = 0; i <= inputArr.length; i++) {
+            for (hour = 9; hour <= 17; hour++) {
+                    let now = new Date().getHours();
+                    console.log(now);
+                    let inputForm = inputArr[i];
+                        if (now >= hour && now < hour++) {
+                        $(inputForm).removeClass("past", "future");
+                        $(inputForm).addClass("present");
+                    } else if (now < hour) {
+                        $(inputForm).removeClass("present", "future");
+                        $(inputForm).addClass("past");
+                    } else if (now > hour) {
+                        $(inputForm).removeClass("past", "present");
+                        $(inputForm).addClass("future");
+                    }
+                };
             };
             // if (now >= hour && now < hour++) {
             //     inputForm.removeClass("past", "future");
@@ -188,7 +192,6 @@
             //     inputForm.removeClass("past", "present");
             //     inputForm.addClass("future");
             // }
-            }
 
         // for (hour = 0; hour <= 8; hour++) {
         //     if (now >= 0 && now <= 8) {
@@ -317,7 +320,6 @@
                 toDo9.val(localStorage.getItem("to-do9"));
             };
         });
-
 
 
 
