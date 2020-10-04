@@ -197,7 +197,7 @@
                             console.log("past:", now, hour);
                             $(inputForm).removeClass("present", "future");
                             $(inputForm).addClass("past");
-                        } else if (hour > now) {
+                        } else {
                             console.log("future:", now, hour);
                             $(inputForm).removeClass("past", "present");
                             $(inputForm).addClass("future");
