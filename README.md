@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://baileymyers.github.io/WorkDay-Scheduler/">
-    <img src="assets\Demo\Demo.photo.png" alt="Logo" width="auto" height="100px">
+    <img src="assets\Demo\demo-photo" alt="Logo" width="auto" height="100px">
   </a>
 
   <h3 align="center">Work Day Scheduler</h3>
