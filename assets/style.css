@@ -13,6 +13,10 @@ body {
     padding: 10px;
   }
   
+  .schedule-row {
+      margin-bottom: 10px;
+  }
+
   .jumbotron {
     text-align: center;
     background-color: transparent;
@@ -23,6 +27,24 @@ body {
   
   .description{
     white-space: pre-wrap;
+  }
+
+  .time-slot {
+      padding-right: 20px;
+      padding-top: 12px;
+      text-align: center;
+      font-size: medium;
+      border-top: thin;
+      border-top-color: gray;
+      border-top-style: solid;
+  }
+
+  #double-digit {
+      padding-right: 11px;
+  }
+
+  .form-control {
+      color: darkgray;
   }
   
   .time-block{
@@ -43,18 +65,18 @@ body {
   }
   
   .past {
-    background-color: #d3d3d3;
-    color: white;
+    background-color: #c0bfbf;
+    color: black;
   }
   
   .present {
-    background-color: #ff6961;
-    color: white;
+    background-color: #b7facb;
+    color: black;
   }
   
   .future {
-    background-color: #77dd77;
-    color: white;
+    background-color: #ffffff;
+    color: black;
   }
   
   .saveBtn {
@@ -68,5 +90,15 @@ body {
   .saveBtn i:hover {
     font-size: 20px;
     transition: all .3s ease-in-out;
+  }
+
+  .saveBtn:hover {
+      background-color: coral !important;
+  }
+
+  footer {
+      background-color: white;
+      height: 50px;
+      width: auto;
   }
   

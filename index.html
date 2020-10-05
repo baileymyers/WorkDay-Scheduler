@@ -31,128 +31,179 @@
     <div class="container">
       <!-- Timeblocks go here -->
         
-      <div class="input-group input-group-lg">
-        <div class="input-group-prepend">
-          <span class="input-group-text border-left-0 rounded-0 text-left" id="inputGroup-sizing-lg nine-am" style="font-size: small;"> 9AM</span>
-        </div>
-        <input type="text" class="form-control rounded-0 todo1" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
-        <button type="button" class="btn btn-primary rounded-0 save savebtn1">
+      <div class="input-group input-group-lg schedule-row">
+        <div class="time-slot">
+            <span> 9AM</span>
+          </div>
+        <input class="form-control rounded-0 todo1" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+        <button type="button" class="btn btn-outline-dark rounded-0 save savebtn1" data-toggle="tooltip" data-placement="top" title="Save">
             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
             <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
           </svg>
         </button>
+        <button type="button" class="btn btn-outline-dark rounded-0 clearBtn1" data-toggle="tooltip" data-placement="top" title="Clear">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+              </svg>
+        </button>
       </div>
 
-      <div class="input-group input-group-lg">
-        <div class="input-group-prepend">
-          <span class="input-group-text border-left-0 rounded-0 text-left" id="inputGroup-sizing-lg" style="font-size: small;"> 10AM</span>
-        </div>
+      <div class="input-group input-group-lg schedule-row">
+        <div class="time-slot" id="double-digit">
+            <span> 10AM</span>
+          </div>
         <input type="text" class="form-control rounded-0 todo2" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
-        <button type="button" class="btn btn-primary rounded-0 save savebtn2">
+        <button type="button" class="btn btn-outline-dark rounded-0 save savebtn2" data-toggle="tooltip" data-placement="top" title="Save">
             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
             <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
           </svg>
         </button>
+        <button type="button" class="btn btn-outline-dark rounded-0 clearBtn2" data-toggle="tooltip" data-placement="top" title="Clear">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+              </svg>
+        </button>
       </div>
 
-      <div class="input-group input-group-lg">
-        <div class="input-group-prepend">
-          <span class="input-group-text border-left-0 rounded-0 text-left" id="inputGroup-sizing-lg" style="font-size: small;"> 11AM</span>
-        </div>
+      <div class="input-group input-group-lg schedule-row">
+        <div class="time-slot" id="double-digit">
+            <span> 11AM</span>
+          </div>
         <input type="text" class="form-control rounded-0 todo3" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
-        <button type="button" class="btn btn-primary rounded-0 save savebtn3">
+        <button type="button" class="btn btn-outline-dark rounded-0 save savebtn3" data-toggle="tooltip" data-placement="top" title="Save">
             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
             <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
           </svg>
         </button>
+        <button type="button" class="btn btn-outline-dark rounded-0 clearBtn3" data-toggle="tooltip" data-placement="top" title="Clear">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+              </svg>
+        </button>
       </div>
 
-      <div class="input-group input-group-lg">
-        <div class="input-group-prepend">
-          <span class="input-group-text border-left-0 rounded-0 text-left" id="inputGroup-sizing-lg" style="font-size: small;"> 12PM</span>
-        </div>
+      <div class="input-group input-group-lg schedule-row">
+        <div class="time-slot" id="double-digit">
+            <span> 12PM</span>
+          </div>
         <input type="text" class="form-control rounded-0 todo4" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
-        <button type="button" class="btn btn-primary rounded-0 save savebtn4">
+        <button type="button" class="btn btn-outline-dark rounded-0 save savebtn4" data-toggle="tooltip" data-placement="top" title="Save">
             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
             <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
           </svg>
+        </button>
+        <button type="button" class="btn btn-outline-dark rounded-0 clearBtn4" data-toggle="tooltip" data-placement="top" title="Clear">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+              </svg>
         </button>
       </div>
     
-      <div class="input-group input-group-lg">
-        <div class="input-group-prepend">
-          <span class="input-group-text border-left-0 rounded-0 text-left" id="inputGroup-sizing-lg" style="font-size: small;"> 1PM</span>
-        </div>
+      <div class="input-group input-group-lg schedule-row">
+        <div class="time-slot">
+            <span> 1PM</span>
+          </div>
         <input type="text" class="form-control rounded-0 todo5" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
-        <button type="button" class="btn btn-primary rounded-0 save savebtn5">
+        <button type="button" class="btn btn-outline-dark rounded-0 save savebtn5" data-toggle="tooltip" data-placement="top" title="Save">
             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
             <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
           </svg>
         </button>
+        <button type="button" class="btn btn-outline-dark rounded-0 clearBtn5" data-toggle="tooltip" data-placement="top" title="Clear">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+              </svg>
+        </button>
       </div>
 
-      <div class="input-group input-group-lg">
-        <div class="input-group-prepend">
-          <span class="input-group-text border-left-0 rounded-0 text-left" id="inputGroup-sizing-lg" style="font-size: small;"> 2PM</span>
-        </div>
+      <div class="input-group input-group-lg schedule-row">
+        <div class="time-slot">
+            <span> 2PM</span>
+          </div>
         <input type="text" class="form-control rounded-0 todo6" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
-        <button type="button" class="btn btn-primary rounded-0 save savebtn6">
+        <button type="button" class="btn btn-outline-dark rounded-0 save savebtn6" data-toggle="tooltip" data-placement="top" title="Save">
             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
             <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
           </svg>
         </button>
+        <button type="button" class="btn btn-outline-dark rounded-0 clearBtn6" data-toggle="tooltip" data-placement="top" title="Clear">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+              </svg>
+        </button>
       </div>
 
-      <div class="input-group input-group-lg">
-        <div class="input-group-prepend">
-          <span class="input-group-text border-left-0 rounded-0 text-left" id="inputGroup-sizing-lg" style="font-size: small;"> 3PM</span>
-        </div>
+      <div class="input-group input-group-lg schedule-row">
+        <div class="time-slot">
+            <span> 3PM</span>
+          </div>
         <input type="text" class="form-control rounded-0 todo7" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
-        <button type="button" class="btn btn-primary rounded-0 save savebtn7">
+        <button type="button" class="btn btn-outline-dark rounded-0 save savebtn7" data-toggle="tooltip" data-placement="top" title="Save">
             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
             <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
           </svg>
         </button>
+        <button type="button" class="btn btn-outline-dark rounded-0 clearBtn7" data-toggle="tooltip" data-placement="top" title="Clear">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+              </svg>
+        </button>
       </div>
 
-      <div class="input-group input-group-lg">
-        <div class="input-group-prepend">
-          <span class="input-group-text border-left-0 rounded-0 text-left" id="inputGroup-sizing-lg" style="font-size: small;"> 4PM</span>
-        </div>
+      <div class="input-group input-group-lg schedule-row">
+        <div class="time-slot">
+            <span> 4PM</span>
+          </div>
         <input type="text" class="form-control rounded-0 todo8" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
-        <button type="button" class="btn btn-primary rounded-0 save savebtn8">
+        <button type="button" class="btn btn-outline-dark rounded-0 save savebtn8" data-toggle="tooltip" data-placement="top" title="Save">
             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
             <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
           </svg>
         </button>
+        <button type="button" class="btn btn-outline-dark rounded-0 clearBtn8" data-toggle="tooltip" data-placement="top" title="Clear">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+              </svg>
+        </button>
       </div>
 
-      <div class="input-group input-group-lg">
-        <div class="input-group-prepend">
-          <span class="input-group-text border-left-0 rounded-0 text-left" id="inputGroup-sizing-lg" style="font-size: small;"> 5PM</span>
+      <div class="input-group input-group-lg schedule-row">
+        <div class="time-slot">
+          <span> 5PM</span>
         </div>
         <input type="text" class="form-control rounded-0 todo9" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
-        <button type="button" class="btn btn-primary rounded-0 save savebtn9">
+        <button type="button" class="btn btn-outline-dark rounded-0 save savebtn9" data-toggle="tooltip" data-placement="top" title="Save">
             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
             <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
           </svg>
         </button>
+        <button type="button" class="btn btn-outline-dark rounded-0 clearBtn9" data-toggle="tooltip" data-placement="top" title="Clear">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+              </svg>
+        </button>
       </div>
-
-      
-    
-    
     </div>
 
+    <script src="./assets/popper.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script>
@@ -164,81 +215,28 @@
 
         var inputArr = [$(".todo1"), $(".todo2"), $(".todo3"), $(".todo4"), $(".todo5"), $(".todo6"), $(".todo7"), $(".todo8"), $(".todo9")];
 
-        
-        // for (i = 0; i <= inputArr.length; i++) {
-        //     for (hour = 9; hour <= 17; hour++) {
-        //             let now = new Date().getHours();
-        //             // console.log(now);
-        //             let inputForm = inputArr[i];
-        //             console.log(hour, now)
-        //                 if (now >= hour && now < hour++) {
-        //                 $(inputForm).removeClass("past", "future");
-        //                 $(inputForm).addClass("present");
-        //             } else if (now < hour) {
-        //                 $(inputForm).removeClass("present", "future");
-        //                 $(inputForm).addClass("past");
-        //             } else if (now > hour) {
-        //                 $(inputForm).removeClass("past", "present");
-        //                 $(inputForm).addClass("future");
-        //             }
-        //         };
-        //     };
-
-        // $(".form-control").addClass("future");
-
         for (i = 0; i <= inputArr.length; i++) {
                     let now = new Date().getHours();
                     let inputForm = inputArr[i];
                     var hour = i+9
+                    console.log(now);
 
-                    // console.log(hour, now);
                         if (hour === now) {
                             console.log("present:", now, hour);
-                            $(inputForm).removeClass("past", "future");
+                            $(inputForm).removeClass("past future");
                             $(inputForm).addClass("present");
                         } else if (hour < now) {
                             console.log("past:", now, hour);
-                            $(inputForm).removeClass("present", "future");
+                            $(inputForm).removeClass("present future");
                             $(inputForm).addClass("past");
                             console.log(inputForm)
                         } else {
                             console.log("future:", now, hour);
-                            $(inputForm).removeClass("past", "present");
+                            $(inputForm).removeClass("past present");
                             $(inputForm).addClass("future");
                             console.log(inputForm)
                     }
             };
-
-
-            // if (now >= hour && now < hour++) {
-            //     inputForm.removeClass("past", "future");
-            //     inputForm.addClass("present");
-            // } else if (now < hour) {
-            //     inputForm.removeClass("present", "future");
-            //     inputForm.addClass("past");
-            // } else if (now > hour) {
-            //     inputForm.removeClass("past", "present");
-            //     inputForm.addClass("future");
-            // }
-
-        // for (hour = 0; hour <= 8; hour++) {
-        //     if (now >= 0 && now <= 8) {
-        //         $(".form-control").removeClass("past", "present");
-        //         $(".form-control").addClass("future");
-        //     }
-        // }
-
-        // for (hour = 18; hour <= 23; hour++) {
-        //     if (now >= 18 && now <= 23) {
-        //         $(".form-control").removeClass("future", "present");
-        //         $(".form-control").addClass("past");
-        //     }
-        // }
-
-        // if (now >= 9 && now <10) {
-        //     $(".todo1").removeClass("future", "past");
-        //     $(".todo1").addClass("present");
-        // }
 
         $(".savebtn1").on("click", function () {
             let toDo1 = $(".todo1").val().trim();
@@ -246,7 +244,6 @@
         })
 
         $(document).ready(function () {
-            // $(".form-control").removeClass("past", "present");
             let toDo1 = $(".todo1");
             if (localStorage.getItem("to-do1")) {
                 toDo1.val(localStorage.getItem("to-do1"));
@@ -349,8 +346,67 @@
             };
         });
 
+        $(".clearBtn1").on("click", function () {
+            let todo1 = $(".todo1");
+            localStorage.removeItem("to-do1");
+            todo1.val("");
+        })
+
+        $(".clearBtn2").on("click", function () {
+            let todo2 = $(".todo2");
+            localStorage.removeItem("to-do2");
+            todo2.val("");
+        })
+
+        $(".clearBtn3").on("click", function () {
+            let todo3 = $(".todo3");
+            localStorage.removeItem("to-do3");
+            todo3.val("");
+        })
+
+        $(".clearBtn4").on("click", function () {
+            let todo4 = $(".todo4");
+            localStorage.removeItem("to-do4");
+            todo4.val("");
+        })
+
+        $(".clearBtn5").on("click", function () {
+            let todo5 = $(".todo5");
+            localStorage.removeItem("to-do5");
+            todo5.val("");
+        })
+
+        $(".clearBtn6").on("click", function () {
+            let todo6 = $(".todo6");
+            localStorage.removeItem("to-do6");
+            todo6.val("");
+        })
+
+        $(".clearBtn7").on("click", function () {
+            let todo7 = $(".todo7");
+            localStorage.removeItem("to-do7");
+            todo7.val("");
+        })
+
+        $(".clearBtn8").on("click", function () {
+            let todo8 = $(".todo8");
+            localStorage.removeItem("to-do8");
+            todo8.val("");
+        })
+
+        $(".clearBtn9").on("click", function () {
+            let todo9 = $(".todo9");
+            localStorage.removeItem("to-do9");
+            todo9.val("");
+        })
+
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+})
+
 
 
     </script>
+    <footer></footer>
   </body>
 </html>
