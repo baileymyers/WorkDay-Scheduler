@@ -2,13 +2,17 @@
 <br />
 <p align="center">
   <a href="https://baileymyers.github.io/WorkDay-Scheduler/">
-    <img src="assets\Demo\demo-photo" alt="Logo" width="auto" height="100px">
+    <img src="assets\Demo\Work Day Scheduler Demo.mp4" alt="Logo" width="auto" height="100px">
   </a>
 
   <h3 align="center">Work Day Scheduler</h3>
 
   <p align="center">
-    YOUR_SHORT_DESCRIPTION
+    Use Work Day Scheduler to keep track of your important assignments and meetings throughout your (you guessed it) workday.
+    <br />
+    Work Day Scheduler let's you scope into each hour of your day. Use the intuitive interface to fill out each hour. Once you hit save, you can trust your schedule will stay put, even if you close the session and want to come back to your schedule later.
+    <br />
+    It's easy to clear each hour as well. If a meeting gets cancelled, you simply click the clear button to remove it from your day schedule.
     <br />
     <a href="https://github.com/baileymyers/WorkDay-Scheduler"><strong>Explore the docs »</strong></a>
     <br />
