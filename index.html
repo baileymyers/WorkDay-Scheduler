@@ -207,29 +207,33 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script>
+      // Using Moment.js to get and append the current date the div with the current-day id
         $("#current-day").append(moment().format('dddd, LL'));
 
-        let m = moment();
-
-        
-
+      // Creating array to hold todo# classes of each input field
         var inputArr = [$(".todo1"), $(".todo2"), $(".todo3"), $(".todo4"), $(".todo5"), $(".todo6"), $(".todo7"), $(".todo8"), $(".todo9")];
 
+      // Creating for loop to compare current time to the hour of the input field
         for (i = 0; i <= inputArr.length; i++) {
                     let now = new Date().getHours();
                     let inputForm = inputArr[i];
                     var hour = i+9
                     console.log(now);
 
+                        // If the input field's hour equals the current time, the present class will be added to that input form, and past and future classes will be removed
                         if (hour === now) {
                             console.log("present:", now, hour);
                             $(inputForm).removeClass("past future");
                             $(inputForm).addClass("present");
+
+                            // If the input field's hour is less than the current time, the past class will be added to that input form, and present and future classes will be removed
                         } else if (hour < now) {
                             console.log("past:", now, hour);
                             $(inputForm).removeClass("present future");
                             $(inputForm).addClass("past");
                             console.log(inputForm)
+
+                            // If the input field's hour anything other than equal or less than the current time, the future class will be added to that input form, and past and present classes will be removed
                         } else {
                             console.log("future:", now, hour);
                             $(inputForm).removeClass("past present");
@@ -238,18 +242,29 @@
                     }
             };
 
+            // When user clicks the button with the savebtn# class,
         $(".savebtn1").on("click", function () {
+
+          // A variable is created to grab the value currently in the input field of the input that has class todo#
             let toDo1 = $(".todo1").val().trim();
+
+            // This value is taken and set it in localStorage
             localStorage.setItem("to-do1", toDo1);
         })
 
+        // When document is finished loading,
         $(document).ready(function () {
             let toDo1 = $(".todo1");
+
+            // If there is a key with a value for to-do#,
             if (localStorage.getItem("to-do1")) {
+
+              // Then get that value from localStorage and make it the value of the div with class todo#
                 toDo1.val(localStorage.getItem("to-do1"));
             };
         });
 
+        // Repeating the same steps as above for remaining 8 buttons and input fields
         $(".savebtn2").on("click", function () {
             let toDo2 = $(".todo2").val().trim();
             localStorage.setItem("to-do2", toDo2);
@@ -346,12 +361,19 @@
             };
         });
 
+
+        // When user clicks the button with clearBtn# class,
         $(".clearBtn1").on("click", function () {
             let todo1 = $(".todo1");
+
+          // Local Storage will remove that corresponding key and value
             localStorage.removeItem("to-do1");
+
+            // And the input field for that div with todo# class will be cleared
             todo1.val("");
         })
 
+        // Repeating the same steps as above for remaining 8 clear buttons and input fields
         $(".clearBtn2").on("click", function () {
             let todo2 = $(".todo2");
             localStorage.removeItem("to-do2");
@@ -400,6 +422,7 @@
             todo9.val("");
         })
 
+        // Toggling tooltip function which will tell the user what the button does when their curson hovers over the button
         $(function () {
             $('[data-toggle="tooltip"]').tooltip()
 })
