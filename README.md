@@ -82,9 +82,9 @@ npm install
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-<iframe src="https://drive.google.com/file/d/1AkVnb1dTBRTNzUTdLYlTl-vb6HrJqxrl/preview" width="640" height="480"></iframe>
+<img src="assets\Demo\Work Day Scheduler.gif" alt="gif of work day in action"/>
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+_For more examples, please refer to the [Documentation](https://baileymyers.github.io/WorkDay-Scheduler/)_
 
 
 
