@@ -82,7 +82,7 @@ npm install
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-<img src="assets\Demo\Work Day Scheduler.gif" alt="gif of work day in action"/>
+<img src="assets\Demo\Work Day Scheduler.gif" alt="gif of work day in action"></img>
 
 _For more examples, please refer to the [Documentation](https://baileymyers.github.io/WorkDay-Scheduler/)_
 
