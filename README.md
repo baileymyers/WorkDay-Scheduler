@@ -1,11 +1,10 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://baileymyers.github.io/WorkDay-Scheduler/">
-    <img src="assets\Demo\Work Day Scheduler Demo.mp4" alt="Logo" width="auto" height="100px">
-  </a>
 
-  <h3 align="center">Work Day Scheduler</h3>
+  <a href="https://baileymyers.github.io/WorkDay-Scheduler/">
+    <h3 align="center">Work Day Scheduler</h3>
+  </a>
 
   <p align="center">
     Use Work Day Scheduler to keep track of your important assignments and meetings throughout your (you guessed it) workday.
@@ -83,7 +82,7 @@ npm install
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+<iframe src="https://drive.google.com/file/d/1AkVnb1dTBRTNzUTdLYlTl-vb6HrJqxrl/preview" width="640" height="480"></iframe>
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
