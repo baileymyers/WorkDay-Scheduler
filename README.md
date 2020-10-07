@@ -82,7 +82,11 @@ npm install
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-<img src="assets\Demo\Work Day Scheduler.gif" alt="gif of work day in action"></img>
+<p align="center">
+<a href="https://baileymyers.github.io/Password-Generator/">
+    <img src="assets/demo/WorkDaySchedulerGIF.gif" alt="gif of Work Day"/>
+</a>
+</p>
 
 _For more examples, please refer to the [Documentation](https://baileymyers.github.io/WorkDay-Scheduler/)_
 
