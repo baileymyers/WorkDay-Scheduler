@@ -45,11 +45,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`github_username`, `repo_name`, `twitter_handle`, `email`
+Work Day Scheduler was the fifth assignment during my time in UW Coding Bootcamp. This challenged me to become familiar with jQuery syntax, research documentation of Moment.js to get time, and build an easy-to-navigate, intuitive layout for a workday schedule.
 
 
 ### Built With
@@ -131,6 +127,5 @@ Project Link: [https://github.com/baileymyers/WorkDay-Scheduler](https://github.
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
-* []()
-* []()
-* []()
+* To my instructor and TAs who are so helpful during class and whom I've learned so much from - thank you!
+* To the AskBCS TA who helped me debug the final piece missing from my script - thank you!
