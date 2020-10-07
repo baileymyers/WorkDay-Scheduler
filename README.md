@@ -79,7 +79,7 @@ npm install
 ## Usage
 
 <p align="center">
-    <img src="assets/demo/WorkDaySchedulerGIF.gif" alt="gif of Work Day" width="400px" height="auto" />
+    <img src="assets/Demo/WorkDaySchedulerGIF.gif" alt="gif of Work Day" width="400px" height="auto" />
 </p>
 
 _For more examples, please refer to the [Documentation](https://baileymyers.github.io/WorkDay-Scheduler/)_
